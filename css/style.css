@@ -1,4 +1,117 @@
-*{
-	box-sizing: border-box;padding: 0;margin: 0;
+@import url('https://fonts.googleapis.com/css?family=Alex Brush');
+*{box-sizing: border-box;padding: 0;margin: 0;}
+body{padding-top: 50px;}
+h2{text-align: center;}
+
+#about{
+	/*color: blue;*/
 }
+.top-nav {
+	display: flex;
+	background-color: black;
+	/*height: 50px;*/
+	min-height: 50px;
+	overflow: hidden;
+	align-items: center;
+	position: fixed;
+	width: 100%;top: 0;left: 0;
+}
+.top-nav a {
+	color: white;
+	text-decoration: none;
+	transition: .5s;
+}
+.top-nav-list a:hover{
+	background-color: grey;
+	border-bottom: 3px solid #047dbf;
+}
+.brand {
+	margin-left: 15px;
+	font-size: 25px;
+}
+.top-nav-list {
+	display: flex;
+	list-style: none;
+	margin-left: auto;
+}
+.top-nav-list li {
+	margin: 0px 10px;
+}
+.top-nav-list a {
+	padding: 14px;
+}
+.full-screen-bg {
+	height: calc(100vh - 50px);
+	width: 100%;
+	background-color: grey;
+	background-image: url("../images/large.jpeg");
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ff00ff;
+	transition: background-image .5s;
+	font-family: 'Alex Brush';
+	font-size: 20px;
+}
+.flex-row {
+	display: flex;
+}
+
+.col1{
+	width: 100%;
+	padding: 10px;border-radius: 50%;
+}
+.col2 {
+	width: 100%;padding: 10px;border-radius: 50%;
+}
+.col3 {
+	width: 100%;padding: 10px;border-radius: 50%;
+}
+.col4 {
+	width: 100%;padding: 10px;border-radius: 50%;
+}
+.col-4-2-1{
+	width: 23%;
+	margin: 1%;
+	border-style: inset;
+	padding: 10px;
+}
+@media (max-width: 1200px){
+
+	.full-screen-bg {
+		background-image: url("../images/medium.jpeg");
+		background-size: cover;
+		background-position: left;
+		transition: background-image .5s;
+		color: brown;
+	}
+	.flex-row{
+		flex-wrap: wrap;
+	}
+	.col-4-2-1{
+		width: 48%;
+	}
+}
+@media (max-width: 600px){
+	.top-nav { 
+		display: block;
+	}
+	.top-nav ul {
+		padding-top: 15px;
+		padding-bottom: 10px;
+	}
+	.full-screen-bg {
+		background-image: url("../images/small.jpeg");
+		background-size: cover;
+		background-position: right;
+		transition: background-image .5s;
+		color: white;
+	}
+	.col-4-2-1{
+		width: 98%;
+	}
+}
+
 
