@@ -1,4 +1,3 @@
-# basic web template
+# Flexbox exerccise
 
-Basic web template for projects. After cloning this to local computer,
-remember to change the origin with $ git remote set-url origin ...
+this is an exercise to help learn the basic CSS properties of flexbox. ---------After cloning this to local computer, remember to change the origin with $ git remote set-url origin ...
